@@ -3,52 +3,60 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family:"Rufina-Bold";
+    src: url(Rufina-Bold.ttf)format(truetype);
+}
+@font-face {
+    font-family:"Poppins-Medium";
+    src: url(Poppins-Medium.ttf)format(truetype);
+}
+@font-face {
+    font-family:"elephant3";
+    src: url(elephant3.ttf)format(truetype);
+}
 section {
     background: #C2EFD4;
     height: 100vh;
-    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   margin: 0 174px;
+    margin: 0 174px;
+    padding-top: 30px; 
 }
+
 .menu {
     display: flex;
-     gap: 57px;
-     justify-content: space-between;
-    align-items: center; 
-    margin: 55px;
-    font-size:25px;
+    gap: 57px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-family: "poppins-medium";
 }
-.menu a {
-color: #224F34;
-  text-decoration: none;
 
+.menu a {
+    color: #224F34;
+    text-decoration: none;
 }
+
 .logo {
-    width: 94px;
-    height: 49px;
-    font-family: Elephant;
+  font-family: "elephant3";
     color: #224F34;
     font-size: 40px;
 }
 
 .card {
-    gap: 57px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
+    gap: 30px; 
 }
 
 .card img {
     width: 30px;
     height: 30px;
-    
 }
 
 button {
@@ -57,9 +65,65 @@ button {
     border-radius: 2px;
     background: #C2EFD4;
     border: 3px solid #224F34;
-   
+    color: #224F34; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.main {
+
+button:hover {
+    background: #224F34;
+    color: #C2EFD4;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 174px;
+    padding-top: 60px;
+    font-family: "poppins-medium";
+}
+.hero-text{
+    max-width: 500px;
+}
+.hero-text h1{
+    font-family: "rufina-bold";
+    font-size: 64px;
     color: #224F34;
-    font: size 80px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
+.hero-text p{
+    font-size: 18px;
+    color: #377751;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    
+}
+.btn-explore{
+    width: 200px;
+    height: 60px;
+    background-color: #224F34;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(34, 79, 52, 0.3);
+    
+}
+.btn-explore:hover{
+    background-color:#1a3c27;
+    font-family: "poppins-medium";
+}
+.hero-image img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+} 
