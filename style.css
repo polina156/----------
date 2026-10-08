@@ -127,3 +127,105 @@ button:hover {
     border-radius: 20px;
     display: block;
 } 
+/* --- Стили для блока Best selling --- */
+.best-selling {
+    background-color: white;
+    padding: 80px 174px; /* Отступы сверху/снизу и по бокам */
+    text-align: center;
+}
+
+.best-selling h2 {
+    font-family: 'Rufina', serif; /* Используем твой новый шрифт */
+    font-size: 64px;
+    color: #224F34;
+    margin-bottom: 15px;
+}
+
+.best-selling .subtitle {
+    font-size: 18px;
+    color: #224F34;
+    margin-bottom: 50px;
+    font-family: "Poppins-Medium";
+}
+
+/* Сетка для карточек */
+.products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Расстояние между карточками */
+    margin-bottom: 60px;
+}
+
+/* Карточка товара */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px; /* Ширина одной карточки */
+}
+
+.product-image {
+    background-color: #C2EFD4; /* Зеленый фон под фото, как на макете */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 380px; /* Фиксированная высота для картинок */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы картинка заполняла блок, не искажаясь */
+}
+
+/* Название товара */
+.product-card h3 {
+    font-family: 'Rufina', serif;
+    font-size: 20px;
+    color: #224F34;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Цена и рейтинг */
+.price-rating {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+    color: #224F34;
+    font-weight: bold;
+}
+
+.rating {
+    color: #224F34;
+}
+
+/* Кнопка See all */
+.see-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.btn-see-all {
+    width: 160px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #224F34;
+    color: #224F34;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-see-all:hover {
+    background: #224F34;
+    color: #C2EFD4;
+}
